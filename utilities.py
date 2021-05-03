@@ -15,7 +15,7 @@ def get_page_html(title: str) -> str:
     Returns:
         html of the page
     """
-    return page(title).html()
+    return page(title, auto_suggest=False).html()
 
 
 def get_first_infobox_text(html: str) -> str:
